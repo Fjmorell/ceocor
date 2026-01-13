@@ -13,7 +13,7 @@ const services = [
   {
     title: 'Implantes de Alta Precisión',
     description:
-      'Planificación digital 3D para recuperar piezas dentales con resultados duraderos y estéticos.'
+      'Planificación clínica personalizada para recuperar piezas dentales con resultados duraderos y estéticos.'
   },
   {
     title: 'Ortodoncia Estética',
@@ -21,16 +21,16 @@ const services = [
       'Alineadores transparentes y brackets cerámicos que corrigen tu sonrisa sin sacrificar comodidad.'
   },
   {
-    title: 'Urgencias 24/7',
+    title: 'Urgencias',
     description:
-      'Guardias odontológicas coordinadas para resolver traumatismos y dolores agudos en el día.'
+      'Atención coordinada para resolver traumatismos y dolores agudos en el día.'
   }
 ]
 
 const specialties = [
   {
-    title: 'Diagnóstico Digital',
-    copy: 'Escáner intraoral, radiología 3D y fotografía clínica para planificar con precisión.'
+    title: 'Diagnóstico Integral',
+    copy: 'Evaluación clínica y radiografías para planificar con precisión.'
   },
   {
     title: 'Odontopediatría',
@@ -38,7 +38,7 @@ const specialties = [
   },
   {
     title: 'Estética Facial',
-    copy: 'Armonización con ácido hialurónico y diseño digital de sonrisa en una misma cita.'
+    copy: 'Armonización con ácido hialurónico y diseño de sonrisa en una misma cita.'
   }
 ]
 
@@ -59,7 +59,7 @@ const testimonials = [
     quote:
       'Llevé a mi hijo por una urgencia nocturna y nos recibieron en menos de una hora, con total calidez.',
     author: 'Patricia Romero',
-    role: 'Guardia 24/7'
+    role: 'Urgencias'
   }
 ]
 
@@ -73,15 +73,15 @@ const gallery = [
     src: 'https://images.unsplash.com/photo-1504439904031-93ded9c8ddee?auto=format&fit=crop&w=800&q=60'
   },
   {
-    title: 'Tecnología digital',
+    title: 'Área clínica',
     src: 'https://images.unsplash.com/photo-1629904853693-89e623a127bd?auto=format&fit=crop&w=800&q=60'
   }
 ]
 
 const smileShowcase = [
   {
-    title: 'Diseño digital de sonrisa',
-    description: 'Simulaciones 3D para definir forma y tono dental antes de intervenir.',
+    title: 'Diseño de sonrisa',
+    description: 'Planificación estética para definir forma y tono dental antes de intervenir.',
     src: smileDesign
   },
   {
@@ -180,7 +180,6 @@ function App() {
           <div className="nav-links-row">
             <div className="nav-links">
               <a href="#servicios">Servicios</a>
-              <a href="#especialidades">Especialidades</a>
               <a href="#equipo">Equipo</a>
               <a href="#contacto">Contacto</a>
             </div>
@@ -197,8 +196,8 @@ function App() {
               Sonrisas diseñadas con precisión clínica y calidez correntina.
             </h1>
             <p className="lead">
-              Agenda online, tecnología digital 3D y un equipo interdisciplinario que acompaña cada
-              etapa del tratamiento.
+              Atención personalizada y un equipo interdisciplinario que acompaña cada etapa del
+              tratamiento.
             </p>
             <div className="hero-actions">
               <a className="cta primary" href="#contacto">
@@ -209,16 +208,15 @@ function App() {
               </a>
             </div>
             <div className="hero-badges">
-              <p>• Financiamiento hasta 12 cuotas</p>
               <p>• Convenios con obras sociales</p>
             </div>
           </div>
           <div className="hero-aside">
             <div className="hero-card">
-              <p className="card-title">Guardia odontológica</p>
+              <p className="card-title">Urgencias odontológicas</p>
               <p className="card-description">
-                Coordinamos turnos prioritarios las 24 horas. Enviá tu consulta por WhatsApp y
-                recibí una respuesta en menos de 15 minutos.
+                Coordinamos turnos prioritarios. Enviá tu consulta por WhatsApp y recibí una
+                respuesta en menos de 15 minutos.
               </p>
               <div className="card-contact">
                 <p className="card-phone">+54 379 475 9547</p>
@@ -243,8 +241,8 @@ function App() {
           <p className="stat-label">Satisfacción en Google</p>
         </div>
         <div>
-          <p className="stat-number">12</p>
-          <p className="stat-label">Boxes equipados</p>
+          <p className="stat-number">10000+</p>
+          <p className="stat-label">Cirugias realizadas</p>
         </div>
         <div>
           <p className="stat-number">7000+</p>
@@ -255,10 +253,10 @@ function App() {
       <section className="section" id="servicios">
         <div className="section-head">
           <p className="pill">Servicios destacados</p>
-          <h2>Planificamos tratamientos integrales con tecnología digital.</h2>
+          <h2>Planificamos tratamientos integrales con experiencia clínica.</h2>
           <p>
             Cada área está coordinada por especialistas certificados en implantes, ortodoncia,
-            rehabilitación oral y estética facial. Trabajamos con diagnóstico digital para lograr
+            rehabilitación oral y estética facial. Trabajamos con diagnóstico integral para lograr
             resultados predecibles.
           </p>
         </div>
@@ -268,30 +266,6 @@ function App() {
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <button>Conocer más</button>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section highlight" id="especialidades">
-        <div className="highlight-text">
-          <p className="pill">Especialidades</p>
-          <h2>Protocolos seguros, equipamiento digital y equipos interdisciplinarios.</h2>
-          <p>
-            Diseño digital de sonrisa, planificación guiada por imagen y seguimiento remoto para
-            acompañarte antes, durante y después del tratamiento.
-          </p>
-          <div className="checklist">
-            <p>✔️ Radiología 3D y escáner intraoral</p>
-            <p>✔️ Quirófano propio y sedación consciente</p>
-            <p>✔️ Laboratorio protésico in house</p>
-          </div>
-        </div>
-        <div className="specialties-list">
-          {specialties.map((spec) => (
-            <article key={spec.title}>
-              <h3>{spec.title}</h3>
-              <p>{spec.copy}</p>
             </article>
           ))}
         </div>
@@ -356,7 +330,7 @@ function App() {
           <div className="info-block">
             <p className="info-title">Clínica central</p>
             <p>Mariano Moreno 2393 · Corrientes Capital</p>
-            <p>Lunes a viernes de 8 a 21 h · Sábados de 9 a 13 h</p>
+            <p>Lunes a viernes de 8 a 20 h · Sábados de 9 a 13 h</p>
           </div>
           <div className="info-block">
             <p className="info-title">Turnos y urgencias</p>
